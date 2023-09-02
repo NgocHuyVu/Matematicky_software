@@ -11,7 +11,7 @@ def pomoci_numpy(data):
     return np.mean(data)
 
 # Měření času pro standardní Python
-python_cas = timeit.timeit(lambda: pomoci__strandardniho_python(np.random.rand(1000000)), number=20)
+python_cas = timeit.timeit(lambda: pomoci_strandardniho_python(np.random.rand(1000000)), number=20)
 print(f"Potřebný čas pro vyřešení pomocí standardního Pythonu: {python_cas} sekund")
 
 # Měření času pro NumPy
